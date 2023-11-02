@@ -25,7 +25,7 @@ contract Resort{
     //Mapping for Client Register
     mapping (address => client) public Clients;
 
-    //functions
+    //Token Managment Functions:
 
     //Set Token price
     function tokenPrice(uint _tokenAmount) internal pure returns (uint){
@@ -67,5 +67,40 @@ contract Resort{
         require(msg.sender == owner);
         _;
     }
+
+    //Resort Managment:
+
+    //Events
+    event enjoy_attraction(string);
+    event new_attraction(string,uint);
+    event closed_attraction(string);
+
+    //Data structure for attraction
+    struct attraction{
+        string attraction_name;
+        uint attraction_price;
+        bool attraction_state;
+    }
+
+    //Mapping for attraction
+    mapping(string => attraction) public Attractions;
+
+    //Arrray for store attraction names
+    string[] attractions;
+
+    //Mapping with client attraction record
+    mapping(address => string[]) attractionsRecords;
+
+    //Resort Managment functions:
+
+    //Adds new attraction
+    function newAttraction(string memory _attractionName, uint _price) public onlyOwner{
+        Attractions[_attractionName] = attraction(_attractionName,_price,true);
+        attractions.push(_attractionName);
+        emit new_attraction(_attractionName,_price);
+    }
+
+    
+
 
 }

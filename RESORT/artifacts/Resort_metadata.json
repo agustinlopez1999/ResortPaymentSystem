@@ -11,6 +11,80 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "closed_attraction",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "enjoy_attraction",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "new_attraction",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "Attractions",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "attraction_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "attraction_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "attraction_state",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -82,6 +156,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_attractionName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "newAttraction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -131,11 +223,11 @@
 			]
 		},
 		"RESORT/Resort.sol": {
-			"keccak256": "0x51b5520c96d3bce6964c8680eb945c4720d3f540d46c0ba18b2f9909b5ee6014",
+			"keccak256": "0x0e09a54e023afd129e29de0364b9438fbdbd7a3fae40007566d98a39cece5575",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5324fcf36277d2361202b9ef0f3e7ff362421124b096c302885a70c53bb1a10d",
-				"dweb:/ipfs/QmWN55vQhShjBDSBo4Entj8rmFXbsSEFzW7ae99ryHjAeM"
+				"bzz-raw://ea1c76f37831c4e9148753aa29b14b6d89a77d673cf9d2b53d261d0040fdc068",
+				"dweb:/ipfs/QmZwqCYj3ys8GPrWrPsi3CQm15Mfra7PfJfd7Wv3STYFdY"
 			]
 		},
 		"RESORT/SafeMath.sol": {

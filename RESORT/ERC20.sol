@@ -80,7 +80,7 @@ contract ERC20Basic is IERC20{
         owner = address(0);
     }
 
-
+    
     function increaseTotalSupply(uint _newTokensAmount) public onlyOwner{
         totalSupply_ +=  _newTokensAmount;
         balances[msg.sender] += _newTokensAmount;

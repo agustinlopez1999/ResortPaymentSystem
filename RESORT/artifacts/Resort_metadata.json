@@ -11,6 +11,51 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Clients",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokens_amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -52,19 +97,19 @@
 	},
 	"sources": {
 		"RESORT/ERC20.sol": {
-			"keccak256": "0x38194bd5483acb206ef6fb716b7f0ae1fa6d93f6602e4c8edf248c563df034de",
+			"keccak256": "0x745c6b7dbd00b08d37e9791caf509752601c62154a86952672f2455e7203f534",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dc919aa5f61088493d576f9e30cdc6b629a4308b774a45d48f308adbff4b9598",
-				"dweb:/ipfs/QmbcskWP2CDgRoAUGfv7RVrb7XSMj8oyaYtKX6rfkwqUTv"
+				"bzz-raw://31b0260e69c74bf5afd0182c28f44f7b712ccbe54bbe8cb76a175ebc0e5e541c",
+				"dweb:/ipfs/QmebQSQUuhErMFqKo9mToM15kAgWQG28fHHDrtwZDoMKfh"
 			]
 		},
 		"RESORT/Resort.sol": {
-			"keccak256": "0x79e06a7e00dcb48758524ebac0b4722cb90b126b045a4dbee553a47a7e0d644b",
+			"keccak256": "0x2001938f43e71f403951e030f04188a61a987938c9da4adc1ad05e332ea9f603",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://13c145014e798b4a34b99a98ce6a468b7914862c316d42d57e609410e9ff16f9",
-				"dweb:/ipfs/QmRjMd1FPjPcwfvSrkLVBubFmuBFbEU7PWVW2QTRPPRMif"
+				"bzz-raw://c1b28727d933953ce7410667175dd93eb1e457ce591febc8a630277df4bae2fd",
+				"dweb:/ipfs/Qmf1NyvdWsmKivPbtdHTf1bQM2xyLR6J6HLunDaMhzY8NT"
 			]
 		},
 		"RESORT/SafeMath.sol": {

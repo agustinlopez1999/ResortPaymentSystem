@@ -56,6 +56,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "mintTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myTokenAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -105,11 +131,11 @@
 			]
 		},
 		"RESORT/Resort.sol": {
-			"keccak256": "0x2001938f43e71f403951e030f04188a61a987938c9da4adc1ad05e332ea9f603",
+			"keccak256": "0x51b5520c96d3bce6964c8680eb945c4720d3f540d46c0ba18b2f9909b5ee6014",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c1b28727d933953ce7410667175dd93eb1e457ce591febc8a630277df4bae2fd",
-				"dweb:/ipfs/Qmf1NyvdWsmKivPbtdHTf1bQM2xyLR6J6HLunDaMhzY8NT"
+				"bzz-raw://5324fcf36277d2361202b9ef0f3e7ff362421124b096c302885a70c53bb1a10d",
+				"dweb:/ipfs/QmWN55vQhShjBDSBo4Entj8rmFXbsSEFzW7ae99ryHjAeM"
 			]
 		},
 		"RESORT/SafeMath.sol": {

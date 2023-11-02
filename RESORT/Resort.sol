@@ -47,8 +47,25 @@ contract Resort{
 
     }
 
+    //Returns balance of contract tokens
     function balanceOf() public view returns(uint){
         return token.balanceOf(address(this)); 
+    }
+
+    //Returns balance of msg.sender
+    function myTokenAmount() public view returns(uint){
+        return token.balanceOf(msg.sender);
+    }
+
+    //Increase total supply
+    function mintTokens(uint _tokenAmount) public onlyOwner(){
+        token.increaseTotalSupply(_tokenAmount);
+    }
+
+    //Modifier onlyOwner
+    modifier onlyOwner(){
+        require(msg.sender == owner);
+        _;
     }
 
 }

@@ -100,7 +100,12 @@ contract Resort{
         emit new_attraction(_attractionName,_price);
     }
 
-    
+    //Close existing attraction
+    function closeAttraction(string memory _attractionName) public onlyOwner(){
+        Attractions[_attractionName].attraction_state = false;
+        emit closed_attraction(_attractionName);
+    }
+
 
 
 }

@@ -132,6 +132,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "_attractionName",
+						"type": "string"
+					}
+				],
+				"name": "closeAttraction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_tokenAmount",
 						"type": "uint256"
@@ -223,11 +236,11 @@
 			]
 		},
 		"RESORT/Resort.sol": {
-			"keccak256": "0x0e09a54e023afd129e29de0364b9438fbdbd7a3fae40007566d98a39cece5575",
+			"keccak256": "0x22461ef6ebb6013db6896553fd1c4fc08d254f27a9c4bd6afae3faa66aa9e18e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ea1c76f37831c4e9148753aa29b14b6d89a77d673cf9d2b53d261d0040fdc068",
-				"dweb:/ipfs/QmZwqCYj3ys8GPrWrPsi3CQm15Mfra7PfJfd7Wv3STYFdY"
+				"bzz-raw://f4175c248119e7cf51cb5464648f8c531ce5c156c7def9cfe6780591f44f6ef8",
+				"dweb:/ipfs/QmRRU8A4HkYvLHCbXGUKXJYLAyNKA3vggJGM9CrBkoW6Pc"
 			]
 		},
 		"RESORT/SafeMath.sol": {

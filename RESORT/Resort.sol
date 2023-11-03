@@ -106,7 +106,7 @@ contract Resort{
         emit closed_attraction(_attractionName);
     }
 
-    //Show Available Resort attractions
+    //Returns Available Resort attractions
     function availableAttractions() public view returns(string[] memory){
         return attractions;
     }
@@ -121,8 +121,18 @@ contract Resort{
         emit enjoy_attraction(_attractionName,attractionPrice,msg.sender);
     }
 
+    //Returns client attraction records
+    function Record() public view returns (string[] memory){
+        return attractionsRecords[msg.sender];
+    }
 
-
+    //Client returns Tokens to Disney
+    function returnTokens(uint _tokenAmount) public payable{
+        require(_tokenAmount>=0,"Can't be negative!");
+        require(_tokenAmount<=myTokenAmount(),"Insufficient Balance");
+        token.transferFromClient(msg.sender,address(this),_tokenAmount);
+        payable(msg.sender).transfer(tokenPrice(_tokenAmount));
+    }
 
 
 }

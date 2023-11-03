@@ -117,6 +117,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "Record",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "availableAttractions",
 				"outputs": [
 					{
@@ -227,6 +240,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_tokenAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "returnTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "_attractionName",
 						"type": "string"
@@ -274,11 +300,11 @@
 			]
 		},
 		"RESORT/Resort.sol": {
-			"keccak256": "0x884afda563a1ca7e62745453876a1926023ca38be6fd1c3f2684d7cca4d698de",
+			"keccak256": "0x20e706fab53e640f6b4a370e41ec90f688f71af0dad9b02e7082705fa0b8a184",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c98e25bb2fecec8c4581077095659cca4729e9696a3072baf2773063a2dab360",
-				"dweb:/ipfs/QmfN1TLrhNPZRwBwKJzMazBcgzo2d1ySkqLjmifno5wP8K"
+				"bzz-raw://024d90f36613e6140ea03d688c4b91fc2357d65fc9a6d9cb521385e9212e14b1",
+				"dweb:/ipfs/QmdMRDW5pPUgQ1HkiM3S493SdpCq9aQwY2KTaoWjXqJ5e9"
 			]
 		},
 		"RESORT/SafeMath.sol": {

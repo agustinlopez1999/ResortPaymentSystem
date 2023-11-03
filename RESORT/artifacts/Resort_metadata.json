@@ -108,7 +108,7 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "tokens_amount",
+						"name": "total_buyed_tokens",
 						"type": "uint256"
 					}
 				],
@@ -266,19 +266,19 @@
 	},
 	"sources": {
 		"RESORT/ERC20.sol": {
-			"keccak256": "0x39eae1f5eb635f30cbce397b3b7e9abdf7e77ac7216d47dcdd3d472d62b5d62e",
+			"keccak256": "0x2f0c8c5014bc67c8d23481e8450f1eacf83f19cbc28c1a0ad7230dbbc9ed56a2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d1107cd62f766fff475e39f3329e49f80a4ca858e02c5a6ae307e93e00ae43c2",
-				"dweb:/ipfs/QmeG5QPKm2FSH3pXzuQHAauH6UdBoiLpLv5XuJcYwtTQ4S"
+				"bzz-raw://dfa204e4b1a2b8a0b89960e09c477a99b31cef4a9bdce1abca45a5d79c2c2e2a",
+				"dweb:/ipfs/QmeyQmVRhTfCX6miTLe6zU2B5HUf5Q4LXHtkQJXBbngKix"
 			]
 		},
 		"RESORT/Resort.sol": {
-			"keccak256": "0x772828412461f113c7d588673dfabc154e8c5a03000c5eece6826317b47ae2ef",
+			"keccak256": "0x884afda563a1ca7e62745453876a1926023ca38be6fd1c3f2684d7cca4d698de",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d05f7cddbe3933be2a98fd92612efaf9b032be5a06c15a65a803694a3b430a1c",
-				"dweb:/ipfs/QmPi8eg71ztQg794xn14Y2tMRUbtZYuzKvNELnb5nk2j52"
+				"bzz-raw://c98e25bb2fecec8c4581077095659cca4729e9696a3072baf2773063a2dab360",
+				"dweb:/ipfs/QmfN1TLrhNPZRwBwKJzMazBcgzo2d1ySkqLjmifno5wP8K"
 			]
 		},
 		"RESORT/SafeMath.sol": {

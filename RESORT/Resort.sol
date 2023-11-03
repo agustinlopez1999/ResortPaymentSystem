@@ -18,7 +18,7 @@ contract Resort{
 
     //Data structure to store resort clients
     struct client{
-        uint tokens_amount;
+        uint total_buyed_tokens;
         string [] favorite_attractions;
     }
 
@@ -43,7 +43,7 @@ contract Resort{
         uint Balance = balanceOf();
         require(_tokenAmount <= Balance, "Transaction failed");
         token.transfer(msg.sender,_tokenAmount);
-        Clients[msg.sender].tokens_amount += _tokenAmount;
+        Clients[msg.sender].total_buyed_tokens += _tokenAmount;
 
     }
 
@@ -120,7 +120,7 @@ contract Resort{
         attractionsRecords[msg.sender].push(_attractionName);
         emit enjoy_attraction(_attractionName,attractionPrice,msg.sender);
     }
-    
+
 
 
 

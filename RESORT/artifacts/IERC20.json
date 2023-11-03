@@ -54,7 +54,8 @@
 			"balanceOf(address)": "70a08231",
 			"totalSupply()": "18160ddd",
 			"transfer(address,uint256)": "a9059cbb",
-			"transferFrom(address,address,uint256)": "23b872dd"
+			"transferFrom(address,address,uint256)": "23b872dd",
+			"transferFromClient(address,address,uint256)": "e0631f7f"
 		}
 	},
 	"abi": [
@@ -231,6 +232,35 @@
 				}
 			],
 			"name": "transferFrom",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_client",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_recipient",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_numTokens",
+					"type": "uint256"
+				}
+			],
+			"name": "transferFromClient",
 			"outputs": [
 				{
 					"internalType": "bool",

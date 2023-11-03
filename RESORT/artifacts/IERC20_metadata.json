@@ -187,6 +187,35 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_client",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFromClient",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -217,11 +246,11 @@
 	},
 	"sources": {
 		"RESORT/ERC20.sol": {
-			"keccak256": "0x745c6b7dbd00b08d37e9791caf509752601c62154a86952672f2455e7203f534",
+			"keccak256": "0x938994694e7d967cdbd7e4d3f22f21bf427c9b1df9b826ebc9f46e170ba53a60",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://31b0260e69c74bf5afd0182c28f44f7b712ccbe54bbe8cb76a175ebc0e5e541c",
-				"dweb:/ipfs/QmebQSQUuhErMFqKo9mToM15kAgWQG28fHHDrtwZDoMKfh"
+				"bzz-raw://b25edc7112b54869f138b920340cd5a80a73efe04540b38fe2bf297a164c2537",
+				"dweb:/ipfs/QmU3Tfp1V3X26oCjN9nhHFRQ6aTsxKpLGtfT1oAQcwKHh8"
 			]
 		},
 		"RESORT/SafeMath.sol": {

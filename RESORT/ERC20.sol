@@ -7,6 +7,7 @@ interface IERC20{
     function balanceOf(address account) external view returns (uint256);
     function allowance(address owner, address spender) external view returns(uint256);
     function transfer(address recipient, uint256 amount) external returns (bool);
+    function transferFromClient(address _client, address _recipient, uint256 _numTokens) external returns (bool);
     function approve(address spender, uint256 amount) external returns (bool);
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -50,9 +51,19 @@ contract ERC20Basic is IERC20{
         return allowed[_owner][_delegate];
     }
 
+    //uses the contract funds
     function transfer(address _recipient, uint256 _numTokens) public override returns (bool){
         require(_numTokens <= balances[msg.sender]);
         balances[msg.sender] = balances[msg.sender].sub(_numTokens);
+        balances[_recipient] = balances[_recipient].add(_numTokens);
+        emit Transfer(msg.sender,_recipient,_numTokens);
+        return true;
+    }
+
+    //uses the client funds
+    function transferFromClient(address _client, address _recipient, uint256 _numTokens) public override returns (bool){
+        require(_numTokens <= balances[_client]);
+        balances[_client] = balances[msg.sender].sub(_numTokens);
         balances[_recipient] = balances[_recipient].add(_numTokens);
         emit Transfer(msg.sender,_recipient,_numTokens);
         return true;
@@ -80,7 +91,7 @@ contract ERC20Basic is IERC20{
         owner = address(0);
     }
 
-    
+
     function increaseTotalSupply(uint _newTokensAmount) public onlyOwner{
         totalSupply_ +=  _newTokensAmount;
         balances[msg.sender] += _newTokensAmount;

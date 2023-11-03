@@ -71,7 +71,7 @@ contract Resort{
     //Resort Managment:
 
     //Events
-    event enjoy_attraction(string);
+    event enjoy_attraction(string,uint);
     event new_attraction(string,uint);
     event closed_attraction(string);
 
@@ -104,6 +104,21 @@ contract Resort{
     function closeAttraction(string memory _attractionName) public onlyOwner(){
         Attractions[_attractionName].attraction_state = false;
         emit closed_attraction(_attractionName);
+    }
+
+    //Show Available Resort attractions
+    function availableAttractions() public view returns(string[] memory){
+        return attractions;
+    }
+
+    //Pay for an attraction
+    function useAttraction(string memory _attractionName) public{
+        require(Attractions[_attractionName].attraction_state == true,"Attraction Close");
+        uint attractionPrice = Attractions[_attractionName].attraction_price;
+        require(myTokenAmount() >= attractionPrice,"Insufficient Balance");
+        token.transferFromClient(msg.sender, address(this),attractionPrice);
+        attractionsRecords[msg.sender].push(_attractionName);
+        emit enjoy_attraction(_attractionName,attractionPrice);
     }
 
 

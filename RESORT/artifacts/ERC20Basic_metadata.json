@@ -316,11 +316,11 @@
 	},
 	"sources": {
 		"RESORT/ERC20.sol": {
-			"keccak256": "0x938994694e7d967cdbd7e4d3f22f21bf427c9b1df9b826ebc9f46e170ba53a60",
+			"keccak256": "0x2f0c8c5014bc67c8d23481e8450f1eacf83f19cbc28c1a0ad7230dbbc9ed56a2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b25edc7112b54869f138b920340cd5a80a73efe04540b38fe2bf297a164c2537",
-				"dweb:/ipfs/QmU3Tfp1V3X26oCjN9nhHFRQ6aTsxKpLGtfT1oAQcwKHh8"
+				"bzz-raw://dfa204e4b1a2b8a0b89960e09c477a99b31cef4a9bdce1abca45a5d79c2c2e2a",
+				"dweb:/ipfs/QmeyQmVRhTfCX6miTLe6zU2B5HUf5Q4LXHtkQJXBbngKix"
 			]
 		},
 		"RESORT/SafeMath.sol": {

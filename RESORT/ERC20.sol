@@ -16,8 +16,8 @@ interface IERC20{
 
 contract ERC20Basic is IERC20{
 
-    string public constant name = "TestERC20";
-    string public constant symbol = "ERC20";
+    string public constant name = "Resort";
+    string public constant symbol = "RST";
     uint8 public constant decimals = 18;
 
 
@@ -63,7 +63,7 @@ contract ERC20Basic is IERC20{
     //uses the client funds
     function transferFromClient(address _client, address _recipient, uint256 _numTokens) public override returns (bool){
         require(_numTokens <= balances[_client]);
-        balances[_client] = balances[msg.sender].sub(_numTokens);
+        balances[_client] = balances[_client].sub(_numTokens);
         balances[_recipient] = balances[_recipient].add(_numTokens);
         emit Transfer(msg.sender,_recipient,_numTokens);
         return true;

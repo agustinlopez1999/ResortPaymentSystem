@@ -134,5 +134,6 @@ contract Resort{
         payable(msg.sender).transfer(tokenPrice(_tokenAmount));
     }
 
+    
 
 }

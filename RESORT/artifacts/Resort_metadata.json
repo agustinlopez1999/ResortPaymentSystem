@@ -300,11 +300,11 @@
 			]
 		},
 		"RESORT/Resort.sol": {
-			"keccak256": "0x20e706fab53e640f6b4a370e41ec90f688f71af0dad9b02e7082705fa0b8a184",
+			"keccak256": "0xa9e5a5fa24ee7bf4bf12b62670f3a6dfecf2d03c1d5174b181341b030edfda59",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://024d90f36613e6140ea03d688c4b91fc2357d65fc9a6d9cb521385e9212e14b1",
-				"dweb:/ipfs/QmdMRDW5pPUgQ1HkiM3S493SdpCq9aQwY2KTaoWjXqJ5e9"
+				"bzz-raw://1d609bb6adab5ffa588cef2f672b71b58746752666ef5f603b624d969fdfdb62",
+				"dweb:/ipfs/QmZ7djqUVeXCfBjn4sWg3NpzPbznHeCxFybQNSFtCfWnML"
 			]
 		},
 		"RESORT/SafeMath.sol": {
